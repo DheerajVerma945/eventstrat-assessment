@@ -1,9 +1,10 @@
 import React from 'react'
+import { Header } from './components'
 
 const App = () => {
   return (
-    <div className='bg-blue-600 p-3'>
-      EventStart React Asignment
+    <div className=''>
+      <Header/>
     </div>
   )
 }
