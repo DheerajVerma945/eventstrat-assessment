@@ -93,13 +93,12 @@ export default function CompanyGSTInfo() {
           "Filing the required forms with the Registrar of Companies (ROC).",
           "Paying the prescribed fees.",
         ].map((step, index) => (
-          <div key={index} className="flex items-start space-x-3 mb-4">
-            <Check className="w-5 h-5 stroke-[2] text-black" />
-            <p className="font-medium ml-2">{step}</p>
+          <div key={index} className="flex items-start space-x-2 mb-4">
+            <Check className="w-5 h-5 stroke-[4]  shrink-0 mt-1" />
+            <p className="font-semibold ml-2">{step}</p>
           </div>
         ))}
       </div>
-      ;
       <p className="mt-4 bg-[#deecdd] font-medium p-6 rounded-md">
         To know more, read our guide on{" "}
         <a className="text-[#21527a] underline" href="#">
@@ -163,7 +162,7 @@ export default function CompanyGSTInfo() {
       <div className="flex mt-12 items-center justify-between">
         <h3
           className=" text-2xl font-bold text-[#124673]"
-          id="GST Registration"
+          id="Pan Registration"
         >
           PAN Registration
         </h3>
@@ -248,7 +247,7 @@ export default function CompanyGSTInfo() {
           How to apply for PAN registration
         </a>
       </p>
-      <div className="flex mt-16 items-center justify-between">
+      <div className="flex mt-16 items-center justify-between" id="Importer Exporter Code (IEC)">
         <h2 className=" text-2xl font-bold">Importer Exporter Code (IEC)</h2>
         <ChevronDown size={40} />
       </div>

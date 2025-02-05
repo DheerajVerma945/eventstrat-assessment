@@ -95,42 +95,46 @@ export default function Footer() {
           <div className="flex gap-5 text-lg mt-4 md:mt-0">
             <a href="#" className="hover:text-gray-300">
               <svg
+                width="24"
+                height="23"
+                viewBox="0 0 24 23"
+                fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 50 50"
-                width="34"
-                height="34"
-                fill="currentColor"
-                className="text-white"
               >
-                <path d="M 5.92 6 L 20.58 27.375 L 6.23 44 L 9.41 44 L 21.99 29.42 L 31.99 44 L 44 44 L 28.68 21.67 L 42.2 6 L 39.03 6 L 27.28 19.62 L 17.93 6 L 5.92 6 z"></path>
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M15.9455 22.5L10.396 14.5901L3.44886 22.5H0.509766L9.09209 12.7311L0.509766 0.5H8.05571L13.286 7.95502L19.8393 0.5H22.7784L14.5943 9.81648L23.4914 22.5H15.9455ZM19.2185 20.27H17.2398L4.71811 2.73H6.6971L11.7121 9.75316L12.5793 10.9719L19.2185 20.27Z"
+                  fill="white"
+                />
               </svg>
             </a>
             <a href="#" className="hover:text-gray-300">
               <svg
+                width="24"
+                height="25"
+                viewBox="0 0 24 25"
+                fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                x="0px"
-                y="0px"
-                width="34"
-                height="34"
-                fill="currentColor"
-                className="text-white"
-                viewBox="0 0 30 30"
               >
-                <path d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h18c1.105,0,2-0.895,2-2V6C26,4.895,25.105,4,24,4z M10.954,22h-2.95v-9.492h2.95V22z M9.449,11.151c-0.951,0-1.72-0.771-1.72-1.72c0-0.949,0.77-1.719,1.72-1.719c0.948,0,1.719,0.771,1.719,1.719 C11.168,10.38,10.397,11.151,9.449,11.151z M22.004,22h-2.948v-4.616c0-1.101-0.02-2.517-1.533-2.517c-1.535,0-1.771,1.199-1.771,2.437V22h-2.948v-9.492h2.83v1.297h0.04c0.394-0.746,1.356-1.533,2.791-1.533c2.987,0,3.539,1.966,3.539,4.522V22z"></path>
+                <path
+                  d="M22.2234 0.5H1.77187C0.792187 0.5 0 1.27344 0 2.22969V22.7656C0 23.7219 0.792187 24.5 1.77187 24.5H22.2234C23.2031 24.5 24 23.7219 24 22.7703V2.22969C24 1.27344 23.2031 0.5 22.2234 0.5ZM7.12031 20.9516H3.55781V9.49531H7.12031V20.9516ZM5.33906 7.93438C4.19531 7.93438 3.27188 7.01094 3.27188 5.87187C3.27188 4.73281 4.19531 3.80937 5.33906 3.80937C6.47813 3.80937 7.40156 4.73281 7.40156 5.87187C7.40156 7.00625 6.47813 7.93438 5.33906 7.93438ZM20.4516 20.9516H16.8937V15.3828C16.8937 14.0562 16.8703 12.3453 15.0422 12.3453C13.1906 12.3453 12.9094 13.7937 12.9094 15.2891V20.9516H9.35625V9.49531H12.7687V11.0609H12.8156C13.2891 10.1609 14.4516 9.20938 16.1813 9.20938C19.7859 9.20938 20.4516 11.5813 20.4516 14.6656V20.9516Z"
+                  fill="white"
+                />
               </svg>
             </a>
             <a href="#" className="hover:text-gray-300">
               <svg
+                width="24"
+                height="25"
+                viewBox="0 0 24 25"
+                fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                x="0px"
-                y="0px"
-                viewBox="0 0 30 30"
-                width="34"
-                height="34"
-                fill="currentColor"
-                className="text-white"
               >
-                <path d="M15,3C8.373,3,3,8.373,3,15c0,6.016,4.432,10.984,10.206,11.852V18.18h-2.969v-3.154h2.969v-2.099c0-3.475,1.693-5,4.581-5c1.383,0,2.115,0.103,2.461,0.149v2.753h-1.97c-1.226,0-1.654,1.163-1.654,2.473v1.724h3.593L19.73,18.18h-3.106v8.697C22.481,26.083,27,21.075,27,15C27,8.373,21.627,3,15,3z"></path>
+                <path
+                  d="M24 12.5C24 5.87258 18.6274 0.5 12 0.5C5.37258 0.5 0 5.87258 0 12.5C0 18.4895 4.3882 23.454 10.125 24.3542V15.9688H7.07812V12.5H10.125V9.85625C10.125 6.84875 11.9166 5.1875 14.6576 5.1875C15.9701 5.1875 17.3438 5.42188 17.3438 5.42188V8.375H15.8306C14.34 8.375 13.875 9.30008 13.875 10.25V12.5H17.2031L16.6711 15.9688H13.875V24.3542C19.6118 23.454 24 18.4895 24 12.5Z"
+                  fill="white"
+                />
               </svg>
             </a>
           </div>
@@ -139,12 +143,16 @@ export default function Footer() {
 
       <div className="flex flex-wrap items-center justify-center md:justify-evenly gap-5 mt-7 w-full">
         <span className="hover:text-gray-400 cursor-pointer">Terms</span>
-        <span className="hover:text-gray-400 cursor-pointer">Cookie Policy</span>
+        <span className="hover:text-gray-400 cursor-pointer">
+          Cookie Policy
+        </span>
         <span className="hover:text-gray-400 cursor-pointer">
           Cookie Settings | Your Privacy Choices
         </span>
         <span className="hover:text-gray-400 cursor-pointer">Disclaimer</span>
-        <span className="hover:text-gray-400 cursor-pointer">Privacy Policy</span>
+        <span className="hover:text-gray-400 cursor-pointer">
+          Privacy Policy
+        </span>
         <span>CultivAIte® is part of Global Ispice Platforms Pvt Ltd</span>
       </div>
     </footer>

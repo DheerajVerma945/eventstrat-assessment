@@ -51,7 +51,7 @@ const ExportingSpices = () => {
             <img
               src="./spiceBoard.png"
               alt="Logo"
-              className=" w-10 h-10 sm:w-12 sm:h-12 md:w-[70px] md:h-[70px] object-contain"
+              className=" w-10 h-10 sm:w-12 sm:h-12 md:w-[70px] md:h-[70px] bg-white shadow-2xl object-contain"
             />
           </div>
           <p className="text-2xl sm:text-4xl md:text-4xl font-bold text-[#222] leading-tight">

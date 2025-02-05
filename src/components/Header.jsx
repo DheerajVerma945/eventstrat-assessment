@@ -5,7 +5,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 py-2 font-semibold bg-white shadow-sm z-50">
+    <header className="sticky top-0 md:py-2 font-semibold bg-white shadow-sm z-50">
       <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 text-lg">
         <div className="flex items-center justify-between h-16">
           <img 
@@ -36,11 +36,11 @@ const Header = () => {
             </div>
           </div>
 
-          <div className="hidden lg:flex items-center space-x-6">
-            <button className="text-[#124673]  hover:text-[#f49729] transition-colors">
+          <div className="hidden lg:flex items-center space-x-6 ">
+            <button className="text-[#124673]  hover:text-[#f49729] transition-colors cursor-pointer">
               Log in
             </button>
-            <button className="bg-[#124673]  text-sm text-white px-4 py-2 rounded-md hover:bg-[#f49729] transition-colors">
+            <button className="bg-[#124673]  text-sm text-white px-4 py-2 rounded-md hover:bg-[#f49729] transition-colors cursor-pointer">
               Contact Us
             </button>
           </div>
