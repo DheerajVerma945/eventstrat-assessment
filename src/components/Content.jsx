@@ -1,7 +1,14 @@
-import { Link } from "lucide-react";
 import React, { useState } from "react";
-import Description from "./Description"
-
+import Description from "./Description";
+import {
+  Coffee,
+  CupSoda,
+  Link,
+  ArrowUpRight,
+  ArrowUpCircle,
+  ChevronLeft,
+  ChevronRight,
+} from "lucide-react";
 
 const Content = () => {
   const [active, setActive] = useState(0);
@@ -50,17 +57,18 @@ const Content = () => {
       <div className="flex flex-col md:flex-row mx-auto max-w-7xl mt-20">
         <div className="hidden lg:w-1/3 lg:block">
           <h2 className="font-semibold text-xl mb-3">Table of Content</h2>
-          <ul className="border-l pl-7 text-lg space-y-1 list-none">
+          <ul className="border-l pl-7 flex flex-col text-lg space-y-1 list-none">
             {toc.map((item, index) => (
-              <li
+              <a
                 key={index}
+                href={`#${item}`}
                 onClick={() => setCurrContent(index)}
                 className={`cursor-pointer ${
                   index === currContent ? "text-[#102e48] font-semibold" : ""
                 }`}
               >
                 {item}
-              </li>
+              </a>
             ))}
           </ul>
           <div className="mt-20 w-fit flex flex-wrap gap-2">
@@ -103,7 +111,61 @@ const Content = () => {
           </div>
         </div>
         <div className="w-full lg:w-2/3 mt-5">
-        <Description/>
+          <Description />
+        </div>
+      </div>
+      <div className="bg-[#f5f5f5] p-6 md:p-10 mt-10 md:mt-20 pb-28 md:pb-56 shadow-lg text-lg md:text-xl flex flex-col md:flex-row max-w-full md:max-w-[80%] mx-auto">
+        <div className="w-full md:w-1/3 border-gray-300 pr-0 md:pr-6">
+          <ul className="space-y-3 md:space-y-4 text-gray-500">
+            <li className="flex items-center text-black font-semibold">
+              <Coffee size={24} md:size={28} className="mr-2" /> Coffee
+            </li>
+            <li className="flex items-center">
+              <Link size={24} md:size={28} className="mr-2" /> Spices
+            </li>
+            <li className="flex items-center">
+              <CupSoda size={24} md:size={28} className="mr-2" /> Tea
+            </li>
+          </ul>
+        </div>
+        <div className="w-full md:w-2/3 mt-4 md:mt-0">
+          <ul className="space-y-6 md:space-y-8">
+            <li className="flex justify-between items-center border-b-2 md:border-b-4 pb-2 border-[#f4bc0c] font-semibold">
+              Coffee Board of India <ArrowUpRight size={24} md:size={28} />
+            </li>
+            <li className="flex justify-between items-center border-b pb-2 border-gray-300">
+              Global Coffee Trade <ArrowUpRight size={24} md:size={28} />
+            </li>
+            <li className="flex justify-between items-center border-b pb-2 border-gray-300">
+              India’s Coffee Exports <ArrowUpRight size={24} md:size={28} />
+            </li>
+            <li className="flex justify-between items-center border-b pb-2 border-gray-300">
+              Introduction to Coffee <ArrowUpRight size={24} md:size={28} />
+            </li>
+          </ul>
+        </div>
+      </div>
+      <a
+        href="#"
+        className="text-center md:text-right mx-auto md:mr-36 mt-6 md:mt-8 text-gray-700 text-lg md:text-xl flex justify-center md:justify-end items-center"
+      >
+        Back to top <ArrowUpCircle size={24} md:size={28} className="ml-1" />
+      </a>
+
+      <div className="max-w-[80%] flex flex-wrap items-center justify-between mx-auto mt-20 px-4 sm:px-6">
+        <div className="text-center sm:text-right w-full sm:w-auto">
+          <p >Previous</p>
+          <p className="text-lg pb-4 border-b  text-black font-medium flex items-center justify-center sm:justify-end">
+            <ChevronLeft className="inline mr-2" />
+            Definition and Classification
+          </p>
+        </div>
+        <div className="text-center sm:text-left w-full sm:w-auto mt-4 sm:mt-0">
+          <p>Next</p>
+          <p className="text-lg pb-4 border-b text-black font-medium flex items-center justify-center sm:justify-start">
+            Spices in the Age of Colonialism
+            <ChevronRight className="inline ml-2" />
+          </p>
         </div>
       </div>
     </div>
