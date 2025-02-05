@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Check, ChevronDown, ChevronUp } from "lucide-react";
+import {  Check, ChevronDown, ChevronUp  } from "lucide-react";
 
 const Accordion = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -86,7 +86,7 @@ export default function CompanyGSTInfo() {
         The specific registration process varies depending on the chosen company
         type. Generally, it involves:
       </p>
-      <div className="bg-[#dae3ea] max-w-[400px] p-8 rounded-lg mt-4">
+      <div className="bg-[#dae3ea] w-[400px] h-[323px] max-w-full p-8 rounded-lg mt-4">
         {[
           "Choosing a unique company name",
           "Obtaining necessary documents (e.g., identity proofs, address proofs, PAN card).",
@@ -94,20 +94,23 @@ export default function CompanyGSTInfo() {
           "Paying the prescribed fees.",
         ].map((step, index) => (
           <div key={index} className="flex items-start space-x-3 mb-4">
-            <Check className="w-6 h-6 stroke-[2]" />
-            <p className="font-medium ml-2 ">{step}</p>
+            <Check className="w-5 h-5 stroke-[2] text-black" />
+            <p className="font-medium ml-2">{step}</p>
           </div>
         ))}
       </div>
-
-      <p className="mt-4 bg-[#deecdd] font-medium p-3 rounded-md">
+      ;
+      <p className="mt-4 bg-[#deecdd] font-medium p-6 rounded-md">
         To know more, read our guide on{" "}
-        <span className="text-[#21527a] underline">
+        <a className="text-[#21527a] underline" href="#">
           how to register a company
-        </span>
+        </a>
       </p>
-      <h3 className="mt-12 text-2xl font-bold text-[#124673]">
-        GST registration
+      <h3
+        className="mt-12 text-2xl font-bold text-[#124673]"
+        id="GST Registration"
+      >
+        GST Registration
       </h3>
       <p className="mt-2">
         Goods and Services Tax (GST) is a comprehensive, multi-stage tax levied
@@ -129,7 +132,6 @@ export default function CompanyGSTInfo() {
         title="Enhanced Credibility"
         content="Boosts trust with suppliers and customers..."
       />
-
       <h3 className="mt-6 mb-2 text-2xl font-bold">
         Key Aspects of GST for Spice Exporters
       </h3>
@@ -158,6 +160,107 @@ export default function CompanyGSTInfo() {
           </div>
         ))}
       </div>
+      <div className="flex mt-12 items-center justify-between">
+        <h3
+          className=" text-2xl font-bold text-[#124673]"
+          id="GST Registration"
+        >
+          PAN Registration
+        </h3>
+        <ChevronUp size={40} />
+      </div>
+      <p className="mt-5">
+        Exporters can maintain foreign currency accounts to receive payments
+        from overseas buyers, which can help to hedge against currency
+        fluctuations.
+      </p>
+      <h2 className="mt-5 text-2xl font-bold">
+        Why is PAN Essential for Spice Exporters?
+      </h2>
+      <div className="mt-5 grid grid-cols-2 gap-5">
+        <div>
+          <strong className="font-semibold">Tax Compliance:</strong>
+          <p>
+            PAN is mandatory for filing income tax returns. As a spice exporter,
+            you will need to file income tax returns to report your profits and
+            pay taxes on your export earnings.
+          </p>
+        </div>
+
+        <div>
+          <strong className="font-semibold">Financial Transactions:</strong>
+          <p>
+            PAN is required for various financial transactions, including
+            opening bank accounts, making investments, and conducting large cash
+            transactions.
+          </p>
+        </div>
+
+        <div>
+          <strong className="font-semibold">GST Registration:</strong>
+          <p>
+            PAN is a prerequisite for obtaining GST registration, which is
+            essential for conducting business within India, including domestic
+            transactions related to your export operations.
+          </p>
+        </div>
+
+        <div>
+          <strong className="font-semibold">Other Legal Requirements:</strong>
+          <p>
+            PAN may be required for various other legal and regulatory purposes,
+            such as obtaining import-export licenses and other necessary
+            permits.
+          </p>
+        </div>
+      </div>
+      <h2 className="mt-5 text-2xl font-bold">How to Obtain a PAN Card?</h2>
+      <div className="mt-5 grid grid-cols-2 gap-5">
+        <div>
+          <strong className="font-semibold">Online Application:</strong>
+          <p>
+            You can apply for a PAN card online through the NSDL or UTIITSL
+            websites.
+          </p>
+        </div>
+
+        <div>
+          <strong className="font-semibold">Offline Application:</strong>
+          <p>
+            You can also apply for a PAN card offline by submitting the
+            application form to designated centers
+          </p>
+        </div>
+
+        <div>
+          <strong className="font-semibold">Required Documents:</strong>
+          <p>
+            The required documents for PAN card application may vary depending
+            on the application method and applicant type. Generally, you will
+            need to provide proof of identity and address, along with recent
+            photographs.
+          </p>
+        </div>
+      </div>
+      <p className="mt-4 bg-[#deecdd] font-medium p-6 rounded-md">
+        To know more, read our comprehensive guide on{" "}
+        <a className="text-[#21527a] underline" href="#">
+          How to apply for PAN registration
+        </a>
+      </p>
+      <div className="flex mt-16 items-center justify-between">
+        <h2 className=" text-2xl font-bold">Importer Exporter Code (IEC)</h2>
+        <ChevronDown size={40} />
+      </div>
+      <div className="flex mt-2 items-center justify-between">
+        <h2 className=" text-2xl font-bold">Authorized Dealer (AD) Code</h2>
+        <ChevronDown size={40} />
+      </div>
+      <div className="flex mt-2 items-center justify-between">
+        <h2 className=" text-2xl font-bold">FSSAI Registration</h2>
+        <ChevronDown size={40} />
+      </div>
+      
     </div>
   );
 }
