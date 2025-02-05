@@ -2,7 +2,7 @@ import { Search } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#1e1e1e] text-white h-full font-semibold p-6 md:p-12">
+    <footer className="bg-[#1e1e1e] text-white h-full mt-10 font-semibold p-6 md:p-12">
       <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
         <div className="space-y-8 mx-auto md:mx-16">
           <img src="/logoFooter.png" alt="CultivAlte Logo" className="w-60" />
